@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groovy Movie</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/datepicker.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+   
+
+    <!-- <article class="box has-text-centered m-5 is-striped is-size-4 is-flex is-justify-content-center no-bckgd"> -->
+    <p class="has-text-centered my-6 mx-6 has-text-black is-size-5 introText mr-auto ml-auto">
+        We all love a good movie, right? Sometimes just searching for a movie is overwhelming! At Cine Realm we want to
+        make it fun and easy to pick a flick. Just input what movie genre and release year and Cine Realm will
+        select 5 movie titles that fit your criteria! Ok, were not doing all the work for you but we will give awesome
+        suggestions! Once the 5 films are selected, click on the movie poster to see more details or click the "Save to
+        My List" button for later. That way, you can come back later to indulge!
+    </p>
+
+    <div class="is-flex is-align-items-center is-justify-content-center">
+        <div class="orange-container">
+
+            <form class="is-flex-direction-column is-align-items-center" method="POST" action="results.html">
+
+                <!-- Genre Dropdown -->
+                <span class="has-text-black has-text-weight-bold is-size-4 mr-2">Genre:</span>
+                <div class="field select" id="dropdown-menu4" role="menu">
+                    <select id="genre-select">
+
+                        <option>
+                            Select Genre
+                        </option>
+                        <option value="28" data-genre="Action">
+                            Action
+                        </option>
+                        <option value="12" data-genre="Adventure">
+                            Adventure
+                        </option>
+                        <option value="16" data-genre="Animation">
+                            Animation
+                        </option>
+                        <option value="35" data-genre="Comedy">
+                            Comedy
+                        </option>
+                        <option value="80" data-genre="Crime">
+                            Crime
+                        </option>
+                        <option value="99" data-genre="Documentary">
+                            Documentary
+                        </option>
+                        <option value="18" data-genre="Drama">
+                            Drama
+                        </option>
+                        <option value="10751" data-genre="Family">
+                            Family
+                        </option>
+                        <option value="14" data-genre="Fantasy">
+                            Fantasy
+                        </option>
+                        <option value="36" data-genre="History">
+                            History
+                        </option>
+                        <option value="27" data-genre="Horror">
+                            Horror
+                        </option>
+                        <option value="10402" data-genre="Musical">
+                            Musical
+                        </option>
+                        <option value="9648" data-genre="Mystery">
+                            Mystery
+                        </option>
+                        <option value="10749" data-genre="Romance">
+                            Romance
+                        </option>
+                        <option value="878" data-genre="Science Fiction">
+                            Science Fiction
+                        </option>
+                        <option value="10770" data-genre="TV Movie">
+                            TV Movie
+                        </option>
+                        <option value="53" data-genre="Thriller">
+                            Thriller
+                        </option>
+                        <option value="10752" data-genre="War">
+                            War
+                        </option>
+                        <option value="37" data-genre="Western">
+                            Western
+                        </option>
+                    </select>
+                </div>
+
+                <div class="is-flex is-align-items-center mt-2">
+                    <span class="has-text-black has-text-weight-bold is-size-4 pl-5 mr-2">Year:</span>
+                    <div class="field select">
+                        <select id="year-select">
+                            <option>Select Year</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field mt-3">
+                    <input id="search-btn" class="sub button blue-btn lrg-btn has-text-weight-medium" type="submit"
+                        value="Find My Movie">
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="is-flex is-align-items-center is-justify-content-center">
+        <button onclick="window.location.href='list.html'" class="lrg-btn white-btn has-text-weight-medium">View My
+            List</button>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/scripts.js"></script>
+<script src="./js/list.js"></script>
+
+</html>

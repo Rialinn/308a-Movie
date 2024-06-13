@@ -1,0 +1,185 @@
+:root {
+    --darkBlue: #1433D9;
+    --grey: grey;
+    --pink: #FF9FD5;
+    --green: #299741;
+    --black: black; 
+  }
+  
+  html {
+    font-family: "Raleway";
+    font-weight: 800;
+    background-color: var(--grey);
+  }
+  
+  body{
+      font-family: "Raleway";
+      font-weight: 900;
+      color: black;
+  }
+  
+  header {
+    width: 100vw;
+    /* background-color: red; */
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  header img {
+    height: 200px;
+  }
+    /* header img{
+        max-width: 35%;
+    } */
+  
+  span{
+    text-align: right;
+    
+  }
+  /* button styling to match custom branding */
+  .orange-btn{
+    background-color: var(--orange);
+    color: white;
+    border-radius: 6px;
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px grey;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  
+  .blue-btn{
+    background-color: var(--darkBlue);
+    color: white;
+    border-radius: 4px;
+    font-weight: bolder;
+    box-shadow: 3px 3px 5px rgb(38, 38, 38);
+    cursor: pointer
+  }
+  
+  .blue-btn:hover{
+      background-color: white;
+      color: var(--darkBlue);
+      font-weight: bolder;
+      box-shadow: 2px 2px 5px grey;
+      cursor: pointer
+    }
+  
+  .white-btn{
+    background-color: white;
+    color: var(--darkBlue);
+    border-radius: 4px;
+    border: 1px solid var(--darkBlue);
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px grey;
+    cursor: pointer;
+  }
+  
+  .white-btn:hover{
+      background-color: var(--darkBlue);
+      color: white;
+      border-radius: 4px;
+      border: 1px solid var(--darkBlue);
+      font-weight: bolder;
+      box-shadow: 5px 5px 5px grey;
+      cursor: pointer;
+    }
+  
+  .lrg-btn{
+    font-size: 150%;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    margin: 1rem 3rem 1rem 3rem;
+  }
+  
+  .med-btn{
+    font-size: 100%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  
+  .orange-container{
+      background-color: var(--orange);
+      border-radius: 2rem;
+      padding: 3rem 8rem 1rem 8rem;
+  }
+  
+  #genre-select{
+      min-width: 11em;
+  }
+  
+  #year-select{
+      min-width: 11em;
+  }
+  
+  /* CSS styling for list page */
+  
+  #container-box {
+    font-family: 'Bebas Neue', cursive;
+    width: fit-content;
+    /* left: auto; */
+    align-items: center;
+    position: relative;
+    /* margin-right: auto; */
+  }
+  
+  #indexBox{
+    background-color: var(--orange);
+    border-radius: 15px;
+  }
+  
+  .mobie p.title {
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    color: var(--darkBlue);
+    border: 1px solid black;
+    margin-top: 30px;
+    height: 75px;
+    font-size: 150%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .review header.title {
+    height: fit-content;
+    width: 30vw;
+    text-align: center;
+  }
+  .review p#review-synop {
+    width: 30vw;
+    text-align: center;
+  }
+  .review p#review-short {
+    width: 30vw;
+    text-align: center;
+  }
+  
+  #review-link{
+      width: 30vw;
+      text-align: center;
+      border: 1 solid black;
+    }
+  
+  p.introText {
+    width: 80vw;
+  }
+  
+  #review-box{
+      margin: auto 6rem;
+      width: 35vw;
+      background-color:white;
+      border-radius: 10px;
+      border: 1px solid black;
+  }
+  .searchParams {
+    background-color: #0c26b4;
+    width: 35vw;
+    height: 2vw;
+    border-radius: 10px;
+    color: white;
+  }
+  .moviePoster {
+    margin-top: -25px;
+  }
+  .saveButt {
+    margin-top: 10px
+  }
